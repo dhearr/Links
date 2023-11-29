@@ -9,15 +9,16 @@ import Github from "./components/Github";
 import Linkedin from "./components/Linkedin";
 import Gmail from "./components/Gmail";
 import World from "./components/World";
+import { styles } from "./style";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div className="bg-black relative z-0 h-screen flex items-center justify-center flex-col">
+    <div className={styles.bgHero}>
       <StarsCanvas />
       <div className="mb-10">
         <Header />
       </div>
-      <div className="flex gap-[23px] sm:gap-10 w-full justify-center max-w-4xl items-center">
+      <div className={styles.content}>
         <Tiktok />
         <Linkedin />
         <Gmail />
